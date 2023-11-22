@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/css/headinglogo.png">
+    <title>Resister</title>
+    <!-- <link rel="stylesheet" href="css/resister_page.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+    <link href="/css/res.css" rel="stylesheet" type="text/css">
+    <script>
+        function signIn(){
+            window.open("/amazon/user");
+        }
+        //  function home(){
+        //     window.open("amazon.html");
+        //  }
+    </script>
+</head>
+<body> 
+    
+    <img src="/css/amazon12.png" alt="this is an image">
+    <hr>
+    
+    <div class="details">
+        <form method="post" action="/user/submit" >
+        <h3>Create Account</h3><br>
+        <label for="name"><b>Name:</b></label><br>
+        <input type="text" name="name" id="name" placeholder="First name and Last Name" required ><br><br>
+        <label for="email"><b>Email:</b></label><br>
+        <input type="email" name="email" id="email" placeholder="Enter Email " required><br><br>
+        <label for="mob"><b>Mobile number:</b></label><br>
+        <input type="number" name="mob" id="mob" placeholder="Enter mobile number" required><br><br>
+        <label for="dob"><b>Date of birth :</b></label><br>
+        <input type="date" name="dob" id="dob" placeholder="Enter your date of birth " required><br><br>
+        <label for="pasword1"><b>Pasword:</b></label><br>
+        <input type="password" name="pasword1" id="password1" placeholder="At leat 6 character" required><br><br>
+        <button>Submit</button>
+    </form>
+    <hr><hr>
+   <div class="footer">
+    <p>Already have an account</p>
+    <a href="#" onclick="signIn()">Login</a>
+   </div>
+    
+    </div>
+  
+</body>
+</html>
